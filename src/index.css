@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .geometric-bg {
+    background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
+  }
+
+  .stage-beam-left {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 300px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    transform: rotate(45deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .stage-beam-right {
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    transform: rotate(-45deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .timer-ring-outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    border: 1px solid rgba(56, 189, 248, 0.04);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .timer-ring-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(56, 189, 248, 0.07);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .logo-glowing-text {
+    background: linear-gradient(to bottom, #ffffff 40%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.45));
+  }
+
+  /* Custom trapezoid design for Who Wants To Be A Millionaire signature look */
+  .geometric-question-box {
+    position: relative;
+    background: linear-gradient(90deg, transparent 0%, rgba(15, 23, 42, 0.95) 15%, rgba(15, 23, 42, 0.95) 85%, transparent 100%);
+    border-top: 2px solid #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+  }
+
+  .geometric-question-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -16px;
+    width: 32px;
+    height: calc(100% + 4px);
+    border: 2px solid #38bdf8;
+    border-right: none;
+    transform: skewX(-15deg);
+    pointer-events: none;
+  }
+
+  .geometric-question-box::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -16px;
+    width: 32px;
+    height: calc(100% + 4px);
+    border: 2px solid #38bdf8;
+    border-left: none;
+    transform: skewX(15deg);
+    pointer-events: none;
+  }
+}

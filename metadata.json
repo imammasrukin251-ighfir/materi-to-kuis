@@ -1,0 +1,6 @@
+{
+  "name": "MILLIONAIRE INDONESIA by MI HM JATI",
+  "description": "Game edukasi kuis interaktif kembaran Who Wants To Be A Millionaire yang dapat mengonversi file soal PDF, TXT, dan DOCX secara otomatis menjadi panggung kuis TV modern dengan visual efek neon, sistem level hadiah, bantuan lifeline, host AI interaktif, dan efek suara dramatis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
